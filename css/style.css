@@ -6,6 +6,13 @@
     line-height: 150%;
 }
 
+.header h1{
+    color: whitesmoke;
+    background-color: #0A3871;
+    text-align: center;
+    font-size: smaller;
+}
+
 .logo{
     padding-top: 10px;
     margin-left: 10px;
@@ -24,6 +31,41 @@ main{
     margin-top: 90px;
     text-transform: lowercase;
 }
+
+.btn-copiar{
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #5784f5;
+    left: 10px;
+    top:20%;
+    border: 1px solid #5784f5;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btn-copiar:active{
+    background-color: #1453f1;
+    color: #ffffff5d;
+}
+
+.btn-copiar::before{
+    content: 'copiado';
+    font-size: 15px;
+    display: none;
+}
+
+.btn-copiar:active{
+    background-color: #1453f1;
+    color: #ffffff3f;
+}
+
+.btn-copiar.active::before{
+    display: block;
+
+}
+
 
 ::placeholder{ color: #0A3871; }
 .textarea:focus{
@@ -50,7 +92,8 @@ main{
 
 .botones{
     display: flex;
-    margin-top: 18px;   
+    margin-top: 18px; 
+    padding-left: 2px;
 }
 
 .btn-desencriptar{
@@ -74,20 +117,16 @@ main{
     width: 328px;
 }
 
-.copiar{
-    border: 1px soild #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
-    width: 336px;
-}
-
 .informacion{
     color:#495057;
     font-size: 18px;
+}
+
+.footer{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+    background-color: #0A3871;
 }
 

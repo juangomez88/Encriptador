@@ -20,6 +20,7 @@ function btnDesencriptar(){
     const textEncriptado = desencriptar(textArea.value);
     mensaje.value = textEncriptado;
     textArea.value = "";
+    mensaje.style.backgroundImage = "none";
 }
 
 function encriptar(stringEncriptada){
@@ -48,6 +49,14 @@ function desencriptar(stringDesencriptada){
         }
     }
     return stringDesencriptada;
+}
+
+function copiartexto() {
+    let copiar = document.querySelector('.textarea');
+    let texto = document.getElementById('textoCopiar');
+
+    texto.select();
+    document.execCommand('copy');
 }
 
 
